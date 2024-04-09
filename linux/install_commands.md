@@ -2,12 +2,18 @@
 
 ### Install Package
 
-`sudo dpkg -i DEB_PACKAGE`
+- `sudo dpkg -i DEB_PACKAGE`
 
 ### Remove a Package
 
-`sudo dpkg -r PACKAGE_NAME`
+- `sudo dpkg -r PACKAGE_NAME`
 
 ### Reconfigure an existing Package
 
-`sudo dpkg-reconfigure PACKAGE_NAME`
+- `sudo dpkg-reconfigure PACKAGE_NAME`
+
+# AppImage
+
+- `chmod +x AppFile.AppImage`
+
+- `./AppFile.AppImage`
