@@ -6,6 +6,9 @@
 
 - `docker run -d -p 0.0.0.0:3000:8080 --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama`
 
+If you want use Ollama Locally, add OLLAMA_HOST as ENV
+- `docker run -d -p 0.0.0.0:3000:8080 -p 0.0.0.0:11434:11434 -v ./DockerData/Ollama-Data:/root/.ollama -v ./DockerData/Open-webui-Data:/app/backend/data -e OLLAMA_HOST=0.0.0.0 --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama`
+
 ### Running on GPU
 
 - `docker run -d -p 0.0.0.0:3000:8080 --gpus=all --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama`
